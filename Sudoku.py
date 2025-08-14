@@ -71,10 +71,10 @@ def search(values):
         attempt = search(new_sudoku)
         if attempt:
             return attempt
-sudoku = input("Enter Sudoku")
+sudoku = input("Enter Sudoku: ")
 sudoku = str(sudoku)
 try:
     display(search(grid_values(sudoku)))
 except:
-    print ("Enter valid Sudoku!")
+    print ("Enter a valid Sudoku!")
 time.sleep(5)
